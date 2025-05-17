@@ -87,3 +87,7 @@ public:
         cout << "[Universitas] Gaji Staff: " << lihatGajiStaff(s) << endl;
     }
 };
+
+int main()
+
+    Mahasiswa mhs("Budi", 12345);
