@@ -43,3 +43,7 @@ void Dosen::beriNilai(Mahasiswa *m, float nilai)
 {
     m->nilai = nilai;
 }
+
+class Staff private : string nama;
+int ID;
+float gaji;
