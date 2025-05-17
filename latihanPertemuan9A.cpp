@@ -38,3 +38,8 @@ public:
         cout << "Mahasiswa: " << nama << " (NIM: " << NIM << ") -> Nilai: " << nilai << endl;
     }
 };
+
+void Dosen::beriNilai(Mahasiswa *m, float nilai)
+{
+    m->nilai = nilai;
+}
