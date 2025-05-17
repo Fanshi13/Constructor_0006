@@ -93,3 +93,6 @@ int main()
 Dosen dsn("Pak Ali", "000111", "Lektor", 8500000);
 Staff stf("Bu Sari", 1001, 5500000);
 Universitas univ;
+
+dsn.beriNilai(&mhs, 88.5);
+mhs.tampil();
