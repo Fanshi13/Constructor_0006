@@ -20,3 +20,7 @@ public:
     friend float aksesGajiDosen(Dosen *d); // hanya akses gaji, tidak semua data
     void beriNilai(Mahasiswa *m, float nilai);
 };
+
+class Mahasiswa private : string nama;
+int NIM;
+float nilai;
