@@ -62,3 +62,8 @@ public:
 
     friend float lihatGajiStaff(Staff *s);
 };
+
+float aksesGajiDosen(Dosen *d)
+{
+    return d->gaji;
+}
