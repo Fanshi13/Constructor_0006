@@ -21,6 +21,20 @@ public:
     void beriNilai(Mahasiswa *m, float nilai);
 };
 
-class Mahasiswa private : string nama;
-int NIM;
-float nilai;
+class Mahasiswa
+{
+private:
+    string nama;
+    int NIM;
+    float nilai;
+
+public:
+    Mahasiswa(string nama, int NIM) : nama(nama), NIM(NIM), nilai(0) {}
+
+    friend class Dosen; // agar Dosen bisa mengatur nilai
+
+    void tampil()
+    {
+        cout << "Mahasiswa: " << nama << " (NIM: " << NIM << ") -> Nilai: " << nilai << endl;
+    }
+};
