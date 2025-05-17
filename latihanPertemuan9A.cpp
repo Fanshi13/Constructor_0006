@@ -72,3 +72,18 @@ float lihatGajiStaff(Staff *s)
 {
     return s->gaji;
 }
+
+// Universitas bukan friend class dari Dosen atau Staff
+class Universitas
+{
+public:
+    void infoGajiDosen(Dosen *d)
+    {
+        cout << "[Universitas] Gaji Dosen: " << aksesGajiDosen(d) << endl;
+    }
+
+    void infoGajiStaff(Staff *s)
+    {
+        cout << "[Universitas] Gaji Staff: " << lihatGajiStaff(s) << endl;
+    }
+};
