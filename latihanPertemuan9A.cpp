@@ -44,6 +44,21 @@ void Dosen::beriNilai(Mahasiswa *m, float nilai)
     m->nilai = nilai;
 }
 
-class Staff private : string nama;
-int ID;
-float gaji;
+class Staff
+{
+private:
+    string nama;
+    int ID;
+    float gaji;
+
+public:
+    Staff(string nama, int ID, float gaji)
+        : nama(nama), ID(ID), gaji(gaji) {}
+
+    void ubahPangkat(Dosen *d, string pangkatBaru)
+    {
+        d->pangkat = pangkatBaru;
+    }
+
+    friend float lihatGajiStaff(Staff *s);
+};
