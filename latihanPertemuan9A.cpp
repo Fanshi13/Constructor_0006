@@ -91,3 +91,5 @@ public:
 int main()
     Mahasiswa mhs("Budi", 12345);
 Dosen dsn("Pak Ali", "000111", "Lektor", 8500000);
+Staff stf("Bu Sari", 1001, 5500000);
+Universitas univ;
