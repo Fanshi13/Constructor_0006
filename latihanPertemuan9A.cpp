@@ -89,10 +89,18 @@ public:
 };
 
 int main()
+{
     Mahasiswa mhs("Budi", 12345);
-Dosen dsn("Pak Ali", "000111", "Lektor", 8500000);
-Staff stf("Bu Sari", 1001, 5500000);
-Universitas univ;
+    Dosen dsn("Pak Ali", "000111", "Lektor", 8500000);
+    Staff stf("Bu Sari", 1001, 5500000);
+    Universitas univ;
 
-dsn.beriNilai(&mhs, 88.5);
-mhs.tampil();
+    dsn.beriNilai(&mhs, 88.5);
+    mhs.tampil();
+
+    stf.ubahPangkat(&dsn, "Lektor Kepala");
+    univ.infoGajiDosen(&dsn);
+    univ.infoGajiStaff(&stf);
+
+    return 0;
+}
